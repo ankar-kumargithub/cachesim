@@ -1,0 +1,74 @@
+<div id="header">
+  <div class="logo">
+    <img
+      src="../../../assets/pngimg.com - amazon_PNG25.png"
+      alt="amazon_logo"
+    />
+  </div>
+  <div id="user-default-address">
+    <i class="material-icons">location_on</i>
+    <div id="address-info">
+      <div class="name">Deliver To {{ userName }}</div>
+      <div id="city_pin">
+        <div id="city">Kanpur</div>
+        <div id="pincode">208027</div>
+      </div>
+    </div>
+  </div>
+  <div id="search-bar">
+    <div id="search-dropdown">All</div>
+    <input
+      type="text"
+      id="search-text-box"
+      autocomplete="off"
+      placeholder="Search Amazon.in"
+      dir="auto"
+      tabindex="0"
+      aria-label="Search Amazon.in"
+      spellcheck="false"
+    />
+    <div class="search-button">
+      <i class="material-icons" id="input-search">search</i>
+    </div>
+  </div>
+  <div id="language-preferences">
+    <div id="flag">🚩</div>
+    <div id="language">
+      EN
+      <i class="material-icons" id="language-drop-down">arrow_drop_down</i>
+    </div>
+  </div>
+  <div id="abt_user">
+    <div class="name">Hello, {{ userName }}</div>
+    <div id="account">
+      Account & Lists
+      <i class="material-icons" id="account-drop-down">arrow_drop_down</i>
+    </div>
+  </div>
+  <div id="return-and-order-info">
+    <div id="returns">Returns</div>
+    <div id="orders">& Orders</div>
+  </div>
+  <div id="cart">
+    <div id="cart-info">
+      <div id="cart-items">4</div>
+      <div id="cart-logo">
+        <i class="material-icons">shopping_cart</i>
+      </div>
+    </div>
+    <span style="margin-left: 10px; font-size: 16px;">Cart</span>
+  </div>
+</div>
+<div id = "header2">
+  <div id="all-categories">
+    <i class="material-icons">menu</i>
+    <span>All</span>
+  </div>
+  <div id="recent-categories">
+    <ng-container *ngFor="let item in categories">
+      <div class="items">
+        {{item}}
+      </div>
+    </ng-container>
+  </div>
+</div>
